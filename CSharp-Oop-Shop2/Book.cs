@@ -14,7 +14,11 @@ namespace CSharp_Oop_Shop2
         private string ibns;
 
         //CONSTRUCTOR
-        public Book(string name, string description, float price, int iva, string author, string ibns) : base(name, description, price, iva);
+        public Book(string name, string description, float price, int iva, string author, string ibns) : base(name, description, price, iva)
+        {
+            this.author = author;
+            this.ibns = ibns;
+        }
 
         //GETTERS
         public string GetAuthor() { return this.author; }
