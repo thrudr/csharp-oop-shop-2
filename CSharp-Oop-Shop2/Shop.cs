@@ -15,7 +15,7 @@ namespace CSharp_Oop_Shop2
         private string address;
         private int houseNumber;
         private string citty;
-        private List<Article> articles;
+        private List<Article> articlesList;
 
         // CONSTRUCTORS
 
@@ -25,7 +25,7 @@ namespace CSharp_Oop_Shop2
             this.address = address;
             this.houseNumber = houseNumber;
             this.citty = citty;
-            this.articles = new List<Article>();
+            this.articlesList = new List<Article>();
         }
 
         // GETTERS
@@ -34,7 +34,7 @@ namespace CSharp_Oop_Shop2
         public string GetAddress() {  return address;  }
         public int GetHouseNumber() {  return houseNumber;  }
         public string GetCitty() {  return citty; }
-        public List<Article> GetListProducts() { return articles; }
+        public List<Article> GetListProducts() { return articlesList; }
 
         // SETTERS
 
@@ -54,7 +54,7 @@ namespace CSharp_Oop_Shop2
 
         public void addArticle(Article article)
         {
-            this.articles.Add(article); 
+            this.articlesList.Add(article); 
         }
     }
 }
